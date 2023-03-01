@@ -1,0 +1,26 @@
+function palindrome(str) {
+     const strInitial = str
+    .toLowerCase()
+    .replace(/_/g,' ')
+    .split(/\W+/)
+    .join('')
+    .split('')
+    .join('')
+  
+  const strReverse = str
+    .toLowerCase()
+    .replace(/_/g,' ')
+    .split(/\W+/)
+    .join('')
+    .split('')
+    .reverse()
+    .join('')
+  
+  // console.log(strInitial)
+  // console.log(strReverse)
+  
+  
+  return strInitial === strReverse
+}
+
+palindrome("eye");
